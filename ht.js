@@ -97,7 +97,7 @@ function toggleX(elmnt){
   form.addEventListener('submit', e => {
     e.preventDefault()
 	if(document.getElementById("name").value.replace(/^\s+|\s+$/g, '').length == 0){
-		window.alert("Make shure you entered your name");
+		window.alert("Make sure you entered your name");
 	}
 	else{
 		var message=document.getElementById("message");
