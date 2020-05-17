@@ -36,6 +36,13 @@
 	position:relative;
 }
 
+.tenFrame{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: 100px;
+}
+
 .subContainer{
 	position:relative;
 	display: inline-block;
