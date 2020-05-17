@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>title</title>
+	<link rel="stylesheet" href="ht.css">
+</head>
+<body>
+	
+	<!--Header-->
+	<div class="header" id="myHeader">
+		<h2 >My Header</h2>
+	</div>
+	
+	<div class="name-label">
+		<h1 class="name-label">Name:</h1>
+		<input type="text" class="name-input">
+	</div>
+	
+	<div  class="grid-container">
+
+		<!-- textbox object  -->
+		<div id="div-2" class="cell" >
+			
+			<div class="subContainer" >
+				<img id="img-1" src="https://i.imgur.com/UPj5qHK.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="https://i.imgur.com/CsNaVXC.png" >
+					</div>
+				
+			</div>
+		
+			<div class="subContainer" >
+				<img id="img-1" src="https://i.imgur.com/UPj5qHK.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="https://i.imgur.com/CsNaVXC.png" >
+					</div>
+				
+			</div>
+			
+			<div class="subContainer" >
+				<img id="img-1" src="https://i.imgur.com/UPj5qHK.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="https://i.imgur.com/CsNaVXC.png" >
+					</div>
+				
+			</div>
+			<div class="subContainer" >
+				<img id="img-1" src="https://i.imgur.com/UPj5qHK.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="https://i.imgur.com/CsNaVXC.png" >
+					</div>
+				
+			</div>
+			<div class="subContainer" >
+				<img id="img-1" src="https://i.imgur.com/UPj5qHK.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="https://i.imgur.com/CsNaVXC.png" >
+					</div>
+				
+			</div>
+			<br>
+			<!-- question object  -->
+			 <label class="question-label">5-2=</label> 
+			 <input id="question-1" class="question-box" data-ans='["3"]' maxlength="1" oninput="reset(this)" onkeypress="return isNumber(event);" type="text" >
+			 <button id="check-1" class="button" data-linked='["question-1"]' onclick="myFunction(this)" type="button"  >
+				<img class="icon" src="https://i.imgur.com/UTKkdxK.png">
+				</button>
+		</div>
+		
+		<!-- textbox object  -->
+		<div id="div-2" class="cell" >
+			
+			<div class="subContainer" >
+				<img id="img-1" src="https://i.imgur.com/UPj5qHK.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="https://i.imgur.com/CsNaVXC.png" >
+					</div>
+				
+			</div>
+		
+			<div class="subContainer" >
+				<img id="img-1" src="https://i.imgur.com/UPj5qHK.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="https://i.imgur.com/CsNaVXC.png" >
+					</div>
+				
+			</div>
+			
+			<div class="subContainer" >
+				<img id="img-1" src="https://i.imgur.com/UPj5qHK.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="https://i.imgur.com/CsNaVXC.png" >
+					</div>
+				
+			</div>
+			<br>
+			<!-- question object  -->
+			 <label class="question-label">3-2=</label> 
+			 <input id="question-2" class="question-box" data-ans='["1"]' maxlength="1" oninput="reset(this)" onkeypress="return isNumber(event);" type="text" >
+			 <button id="check-1" class="button" data-linked='["question-2"]' onclick="myFunction(this)" type="button"  >
+				<img class="icon" src="https://i.imgur.com/UTKkdxK.png">
+				</button>
+		</div>
+		
+		
+		<!-- textbox object  -->
+		<div id="div-4" class="cell">
+			<img src="x.png"><br>
+			<!-- question object  -->
+			 <label class="question-label">9-3=</label> 
+			 <input id="question-3" class="question-box" data-ans='["6"]' maxlength="1" oninput="reset(this)" onkeypress="return isNumber(event);" type="text" >
+		</div>
+		
+	</div>
+	<div id="div-3">
+		
+	</div>
+	
+	
+	<script src="ht.js"></script>
+</body>
+</html>

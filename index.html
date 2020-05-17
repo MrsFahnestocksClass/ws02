@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Math Worksheet Two</title>
+	<link rel="stylesheet" href="ht.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/disableautofill/src/jquery.disableAutoFill.min.js"></script>
+
+
+</head>
+<body>
+	
+	<!--banner-->
+	<div class="banner" id="myHeader">
+		<h2 >Worksheet Two</h2>
+	</div>
+<form name="sheetPost" id="sheetPost"   autocomplete="new-password" >
+<input type="password" style="display:none;" readonly>
+	<div class="header">
+	
+			<label class="name-label">Name:</label>
+			<input name="studentname" id="name" autocomplete="new-password" type="text" class="name-input">
+			<div class="directions">
+				<label class="directions-head">Directions:</label>
+				<br>
+				<label>Solve these equations.
+				   Click on an tree to take it away.
+				   <br>
+				   Type your answer in the answer box.
+				   <br>
+				   To check your answer click on the check mark.
+				   <br>
+				   If the box turns green, you are right. 
+				   <br>
+				   If the box turns red, try again.
+				   <br>
+				   Once you're done click the submit button.
+				</label>
+				
+				
+	
+			</div>
+		
+	</div>
+	
+	
+
+	
+	<div  class="grid-container">
+
+		<!-- textbox object  -->
+		<div id="div-2" class="cell" >
+			
+			<div class="subContainer" >
+				<img id="img-1" src="tree.png" alt="apple">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="x.png">
+					</div>
+				
+			</div>
+			
+			<div class="subContainer" >
+				<img id="img-1" src="tree.png" alt="apple">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="x.png" >
+					</div>
+				
+			</div>
+			
+			<div class="subContainer" >
+				<img id="img-1" src="tree.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="x.png" >
+					</div>
+				
+			</div>
+			<div class="subContainer" >
+				<img id="img-1" src="tree.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="x.png" >
+					</div>
+				
+			</div>
+			<div class="subContainer" >
+				<img id="img-1" src="tree.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="x.png" >
+					</div>
+				
+			</div>
+			<div class="subContainer" >
+				<img id="img-1" src="tree.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="x.png" >
+					</div>
+				
+			</div>
+			<div class="subContainer" >
+				<img id="img-1" src="tree.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="x.png" >
+					</div>
+				
+			</div>
+			
+			<br>
+			<!-- question object  -->
+			 <label class="question-label">7-3=</label> 
+			 <input id="question-1"  autocomplete="new-password"  class="question-box" data-ans='["4"]' data-flag='false' maxlength="1" onfocus="cclear(this)" onkeypress="return isNumber(event);" type="text" >
+			 <button  class="check" data-linked='["question-1"]' onclick="myFunction(this)" type="button"  >
+				<img class="icon" src="chek.png">
+				</button>
+		</div>
+		
+		<!-- textbox object  -->
+		<div id="div-2" class="cell" >
+			
+			<div class="subContainer" >
+				<img id="img-1" src="tree.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="x.png" alt="X">
+					</div>
+				
+			</div>
+		
+			<div class="subContainer" >
+				<img id="img-1" src="tree.png" alt="apple">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="x.png" alt="X">
+					</div>
+				
+			</div>
+			
+			<div class="subContainer" >
+				<img id="img-1" src="tree.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="x.png" alt="X">
+					</div>
+				
+			</div>
+			<div class="subContainer" >
+				<img id="img-1" src="tree.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="x.png" >
+					</div>
+				
+			</div>
+			<div class="subContainer" >
+				<img id="img-1" src="tree.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="x.png" >
+					</div>
+				
+			</div>
+			<div class="subContainer" >
+				<img id="img-1" src="tree.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="x.png" >
+					</div>
+				
+			</div>
+			<div class="subContainer" >
+				<img id="img-1" src="tree.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="x.png" >
+					</div>
+				
+			</div>
+			<div class="subContainer" >
+				<img id="img-1" src="tree.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="x.png" >
+					</div>
+				
+			</div>
+			<br>
+			<!-- question object  -->
+			 <label class="question-label">8-7=</label> 
+			 <input id="question-2" class="question-box" data-ans='["1"]' data-flag='false' maxlength="1" onfocus="cclear(this)"  onkeypress="return isNumber(event);" type="text" >
+			 <button class="check" data-linked='["question-2"]' onclick="myFunction(this)" type="button"  >
+				<img class="icon" src="chek.png">
+				</button>
+		</div>
+		
+		
+	
+		
+	
+	
+	<!-- textbox object  -->
+		<div id="div-2" class="cell" >
+			
+			<div class="subContainer" >
+				<img id="img-1" src="tree.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="x.png">
+					</div>
+				
+			</div>
+			
+			<div class="subContainer" >
+				<img id="img-1" src="tree.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="x.png" >
+					</div>
+				
+			</div>
+			
+			<div class="subContainer" >
+				<img id="img-1" src="tree.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="x.png" >
+					</div>
+				
+			</div>
+			<div class="subContainer" >
+				<img id="img-1" src="tree.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="x.png" >
+					</div>
+				
+			</div>
+			<div class="subContainer" >
+				<img id="img-1" src="tree.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="x.png" >
+					</div>
+				
+			</div>
+			<div class="subContainer" >
+				<img id="img-1" src="tree.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="x.png" >
+					</div>
+				
+			</div>
+			<br>
+			<!-- question object  -->
+			 <label class="question-label">6-6=</label> 
+			 <input id="question-3"  autocomplete="new-password"class="question-box" data-ans='["0"]' data-flag='false' maxlength="1" onfocus="cclear(this)"  onkeypress="return isNumber(event);" type="text" >
+			 <button class="check" data-linked='["question-3"]' onclick="myFunction(this)" type="button"  >
+				<img class="icon" src="chek.png">
+				</button>
+		</div>
+	
+		<!-- textbox object  -->
+		<div id="div-2" class="cell" >
+			
+			<div class="subContainer" >
+				<img id="img-1" src="tree.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="x.png">
+					</div>
+				
+			</div>
+			
+			<div class="subContainer" >
+				<img id="img-1" src="tree.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="x.png" >
+					</div>
+				
+			</div>
+			
+			<div class="subContainer" >
+				<img id="img-1" src="tree.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="x.png" >
+					</div>
+				
+			</div>
+			<div class="subContainer" >
+				<img id="img-1" src="tree.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="x.png" >
+					</div>
+				
+			</div>
+			<div class="subContainer" >
+				<img id="img-1" src="tree.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="x.png" >
+					</div>
+				
+			</div>
+			<div class="subContainer" >
+				<img id="img-1" src="tree.png">
+					<div class="overlay" onclick="toggleX(this)">
+						<img id="img-1" src="x.png" >
+					</div>
+				
+			</div>
+			
+			<br>
+			<!-- question object  -->
+			 <label class="question-label">6-2=</label> 
+			 <input   autocomplete="new-password" id="question-4" class="question-box" data-ans='["4"]' data-flag='false' maxlength="1" onfocus="cclear(this)"  onkeypress="return isNumber(event);" type="text" >
+			 <button class="check" data-linked='["question-4"]' onclick="myFunction(this)" type="button"  >
+				<img class="icon" src="chek.png">
+				</button>
+		</div>
+		
+		<!-- textbox object 5 -->
+		<div id="div-2" class="cell" >
+			
+			
+			<br>
+			<!-- question object  -->
+			 <label class="question-label">4-1=</label> 
+			 <input id="question-5"  autocomplete="new-password" class="question-box" data-ans='["3"]' data-flag='false' maxlength="1" onfocus="cclear(this)"  onkeypress="return isNumber(event);" type="text" >
+			 <button class="check" data-linked='["question-5"]' onclick="myFunction(this)" type="button"  >
+				<img class="icon" src="chek.png">
+				</button>
+		</div>
+		
+		
+		<!-- textbox object 6 -->
+		<div id="div-2" class="cell" >
+			
+			
+			
+			<br>
+			<!-- question object  -->
+			 <label class="question-label">5-3=</label> 
+			 <input id="question-6"  autocomplete="new-password" class="question-box" data-ans='["2"]' data-flag='false' maxlength="1" onfocus="cclear(this)"  onkeypress="return isNumber(event);" type="text" >
+			 <button class="check" data-linked='["question-6"]' onclick="myFunction(this)" type="button"  >
+				<img class="icon" src="chek.png">
+				</button>
+		</div>
+		
+	
+	</div>
+	
+	<script src="ht.js"></script>
+	
+	
+	<input type="submit" value="Submit" class="subButton">
+</form>
+	
+	<!-- submit overlay  -->
+	<div id="myNav" class="overlay2">
+	
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			
+		<div class="overlay2-content">
+			
+			<h1 >Good Job!</h1>
+			<p id="message"></p>
+			
+		</div>
+		<div class="cont">
+					<div class="confetti"></div>
+					<div class="confetti"></div>
+					<div class="confetti"></div>
+					<div class="confetti"></div>
+					<div class="confetti"></div>
+					<div class="confetti"></div>
+					<div class="confetti"></div>
+					<div class="confetti"></div>
+					<div class="confetti"></div>
+					<div class="confetti"></div>
+					<div class="confetti"></div>
+					<div class="confetti"></div>
+					<div class="confetti"></div>
+					<div class="confetti"></div>
+				</div>
+	</div>
+
+
+</body>
+</html>
